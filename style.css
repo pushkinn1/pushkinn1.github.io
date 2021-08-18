@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0; 
 }
+a:link {
+    text-decoration: none;
+    color: #000;
+}
 .home {
     background: url(imgs/cover.jpg) top center;
     background-attachment: fixed;
@@ -47,6 +51,7 @@
     border-radius: 50%;
     border: 2px solid white;
     bottom: 40px;
+    cursor: pointer;    
 }
 .angledown {
     border: solid white;
@@ -60,7 +65,43 @@
     animation: down 1.5s infinite;
     transition-duration: .5s;
 }
-
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    position: sticky;
+    top: 0;
+}
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Caveat';
+    padding: 15px 0;
+}
+.header_navbar {
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.navbar_nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_nav li {
+    padding: 0 15px;
+}
+a.active {
+    color: #E7746F;
+}
 @keyframes down {
     0% {
         top: 0;
