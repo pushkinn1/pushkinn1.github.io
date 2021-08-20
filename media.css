@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .header_navbar {
+        display: none;
+    }
+    .burger-icon {
+        display: flex;
+    }
+    .row-adaptive {
+        flex-direction: column;
+    }
+}
