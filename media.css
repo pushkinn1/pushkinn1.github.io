@@ -8,4 +8,7 @@
     .row-adaptive {
         flex-direction: column;
     }
+    .iconbox-container {
+        max-width: 100%;
+    }
 }
