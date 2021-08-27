@@ -297,6 +297,86 @@ a.active {
     transform: scaleY(1);
     opacity: 1;
 }
+.form {
+    max-width: 555px;
+    margin: 0 auto;
+}
+.form * {
+    font: 12px/1.5 "Raleway";
+    border-radius: 3px;
+    font-weight: 600;
+    transition-duration: .5s;
+}
+.form *:focus {
+    outline: 0;
+    border: 1px solid rgba(135, 135, 135, 0.7);
+}
+.form_text-input {
+    height: 34px;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #D8E1E4;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+.form_textarea {
+    color: #555;
+    border: 1px solid #D8E1E4;
+    width: 100%;
+    font-size: 12px;
+    width: 100%;
+    padding: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.btn {
+    border-radius: 3px;
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    letter-spacing: 1px;
+}
+.form_btn {
+    width: 100%;
+    font-size: 13px;
+    background-color: rgba(17, 17, 17, .8);
+    color: white;
+    padding: 10px 24px;
+}
+.calltoaction {
+    padding: 50px 0;
+    background-image: url(imgs/calltoaction.jpg);
+    background-size: cover;
+    font-family: "Raleway";
+}
+.calltoaction * {
+    text-align: center;
+}
+.calltoaction_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.calltoaction_subtitle {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.calltoaction_btn {
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    line-height: 1.33;
+    background-color: #f5f5f5;
+    max-width: 111px;
+    font-size: 13px;
+    margin: 5px auto;
+}
 @keyframes down {
     0% {
         top: 0;
@@ -321,6 +401,8 @@ a.active {
     padding: 40px 0;
     text-align: center;
     color: white;
+    font-family: "Raleway";
+    font: 300 14px/1.8 'Raleway', sans-serif;
 }
 .footer__heart {
     margin-bottom: 10px;
