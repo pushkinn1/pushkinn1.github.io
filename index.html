@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="preload.js"></script>
+    <!-- /JS -->
+<!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+<!-- /Fonts -->
+<!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <script src="preload.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+<!-- /CSS -->
 </head>
 <body>
     <div id="loader">
@@ -24,7 +36,7 @@
                 <p>Hello. my name is Kirill and I am</p>
                 <h1>Proffesional front-end developer</h1>
             </div>
-            <div class="scrolldown">
+            <div id="js-scrolldown" class="scrolldown">
                 <div class="angledown"></div>
             </div>
         </div>
@@ -58,7 +70,7 @@
                     </div>
                 </div>
             </header>
-            <section class="section services">
+            <section id="js-main" class="section services">
                 <div class="wrapper">
                     <div class="section-block">
                         <h2 class="section-block_title">
@@ -154,6 +166,56 @@
                     </div>
                 </div>
             </section>
+            <section class="section technologies">
+                <div class="wrapper">
+                    <div class="section-block">
+                        <h2 class="section-block_title">
+                            technologies that i use
+                        </h2>
+                        <div class="section-block_line"></div>
+                        <div class="section-block_subtitle">
+                            No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/html.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/css.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/js.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/git.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/sass.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/jq.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slide">
+                                <img src="imgs/figma.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="calltoaction">
                 <div class="wrapper">
                     <div class="calltoaction_title">
@@ -191,14 +253,22 @@
             <div class="wrapper">
                 <div class="footer__links_container">
                     <ul class="footer__links">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-vk"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-telegram"></i>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__heart">
-                    Made with love in Elektrostal
+                    Made with <span><i class="fas fa-heart"></i></span> in Elektrostal
                 </div>
                 <div class="footer__copyright">
                     © 2015 John Doe | Images: Unsplash & Zoomwalls
@@ -207,5 +277,23 @@
         </div>
     </div>   
     <script> </script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+        })
+    </script>
+    <script>
+        let main = document.getElementById("js-main");
+        let scrolldown = document.getElementById("js-scrolldown");
+
+        scrolldown.addEventListener("click", () => {
+            main.scrollIntoView({
+                behavior: "smooth",
+            });
+        })
+    </script>
 </body>
 </html>
